@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.tmux.conf: tmux/.tmux.conf
+    ~/.config/kitty: kitty
+    ~/.config/nvim: nvim/nvim
+    ~/.zshrc: zsh/.zshrc
+
+- create:
+    - ~/downloads
+    - ~/.vim/undo-history
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - sh homebrew/install.sh
+  - sh nvim/install.sh
+  - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

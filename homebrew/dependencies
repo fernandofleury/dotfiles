@@ -1,0 +1,61 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+
+cask_args appdir: "/Applications"
+
+###
+# Casks
+###
+cask "1password"
+cask "anki"
+cask "docker"
+cask "figma"
+cask "firefox"
+cask "google-chrome"
+cask "kitty"
+cask "rectangle"
+cask "slack"
+cask "spotify"
+cask "viscosity"
+cask "visual-studio-code"
+
+###
+# Mac App Store
+###
+mas "Pastebot", id: 1179623856
+mas "Xcode", id: 497799835
+mas "Things", id: 904280696
+mas "Divvy", id: 413857545
+
+brew "unrar"
+brew "coreutils"
+brew "gzip"
+
+brew "ripgrep"
+brew "fzf"
+
+brew "bash"
+brew "zsh"
+
+brew "neovim"
+brew "tmux"
+
+# Programming languages
+brew "nodenv"
+
+# Developer Tooling
+brew "git"
+brew "gh"
+brew "httpie"
+brew "docker"
+
+# Developer Infrastructure Tooling
+brew "awscli"
+brew "kubernetes-cli"
+brew "kubernetes-helm"
+brew "kubectx"
+brew "terraform"
